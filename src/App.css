@@ -1,0 +1,62 @@
+*,
+::-webkit-scrollbar {
+  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
+}
+
+.page-main{
+  position: relative;
+}
+
+.navMain {
+  background-color: #007BA7;
+  display: flex;
+  justify-content: end;
+  color: white;
+  height: 4rem;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  justify-content: end;
+  padding: 1.3rem;
+  width: 50%;
+}
+
+.page{
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.pageOn{
+  background-color: #A50044;
+}
+
+.circle{
+  position: fixed;
+  bottom: -80%;
+}
+
+.mainHeader {
+  z-index: 10;
+  position: relative;
+}
+
+.mainArticle {
+  z-index: 10;
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  .navItems {
+    gap: 0.5rem;
+  }
+  .navMain {
+    white-space: normal;
+  }
+}
